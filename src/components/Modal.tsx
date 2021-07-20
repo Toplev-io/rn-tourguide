@@ -280,19 +280,11 @@ export class Modal extends React.Component<ModalProps, State> {
       return null
     }
 
-    const { opacity } = this.state
     return (
       <Animated.View
         pointerEvents='box-none'
         key='tooltip'
-        style={[
-          styles.tooltip,
-          this.props.tooltipStyle,
-          {
-            opacity,
-            transform: [{ translateY: this.state.tooltipTranslateY }],
-          },
-        ]}
+        style={[styles.tooltip, this.props.tooltipStyle]}
       >
         <TooltipComponent
           isFirstStep={this.props.isFirstStep}
