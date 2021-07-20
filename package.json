@@ -1,6 +1,6 @@
 {
-  "version": "2.7.1",
   "name": "@hijack333/rn-tourguide",
+  "version": "2.7.5",
   "description": "Make an interactive step by step tour guide for your react-native app (a rewrite of react-native-copilot)",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -90,4 +90,4 @@
     "logkitty": "^0.7.1",
     "mem": "^4.0.0"
   }
-}}
+}
