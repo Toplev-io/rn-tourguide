@@ -17,7 +17,7 @@
 
 <div align="center">
   <p align="center">
-    <a href="https://www.npmjs.com/package/rn-tourguide">
+    <a href="https://www.npmjs.com/package/@hijack333/rn-tourguide">
       <img alt="npm downloads" src="https://img.shields.io/npm/dm/rn-tourguide.svg"/>
     </a>
     <a href="https://www.npmjs.com/package/rn-tourguide">
@@ -35,7 +35,7 @@
 ## Installation
 
 ```
-yarn add rn-tourguide
+yarn add @hijack333/rn-tourguide
 ```
 
 ```
@@ -57,7 +57,7 @@ import {
   TourGuideZone, // Main wrapper of highlight component
   TourGuideZoneByPosition, // Component to use mask on overlay (ie, position absolute)
   useTourGuideController, // hook to start, etc.
-} from 'rn-tourguide'
+} from '@hijack333/rn-tourguide'
 
 // Add <TourGuideProvider/> at the root of you app!
 function App() {
