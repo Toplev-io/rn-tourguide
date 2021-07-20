@@ -28,6 +28,7 @@ interface Props {
   borderRadius?: number
   currentStep?: IStep
   easing?(value: number): number
+  stop(): void
 }
 
 interface State {
@@ -181,6 +182,7 @@ export class SvgMask extends Component<Props, State> {
     const Wrapper = dismissOnPress ? TouchableWithoutFeedback : View
 
     return (
+      // @ts-ignore
       <Wrapper
         style={this.props.style}
         onLayout={this.handleLayout}
