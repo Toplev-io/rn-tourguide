@@ -1,17 +1,17 @@
 {
-  "name": "rn-tourguide",
   "version": "2.7.1",
+  "name": "@hijack333/rn-tourguide",
   "description": "Make an interactive step by step tour guide for your react-native app (a rewrite of react-native-copilot)",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "private": false,
   "scripts": {
     "start": "yarn config:dev && expo start -c",
     "start:web": "yarn config:dev && expo start -c -w",
-    "test": "TZ=Europe/Paris jest --no-watchman",
+    "test": "jest --no-watchman",
     "tsc": "node_modules/.bin/tsc --noEmit",
     "tsc:watch": "node_modules/.bin/tsc --noEmit --watch",
-    "build": "rm -rf lib/ && node_modules/.bin/tsc",
+    "build": "node_modules/.bin/tsc",
     "config:dev": "json -I -f package.json -e 'this.main=\"node_modules/expo/AppEntry.js\"'",
     "config:npm": "json -I -f package.json -e 'this.main=\"lib/index.js\"'",
     "lint": "tslint --project .",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xcarpentier/rn-tourguide.git"
+    "url": "git+https://github.com/Toplev-io/rn-tourguide.git"
   },
   "keywords": [
     "react-native",
@@ -34,12 +34,12 @@
     "intro.js",
     "intro"
   ],
-  "author": "Xavier Carpentier <xcapetir@gmail.com>",
+  "author": "Zhen <g.hijack333@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xcarpentier/rn-tourguide/issues"
+    "url": "https://github.com/Toplev-io/rn-tourguide/issues"
   },
-  "homepage": "https://xcarpentier.github.io/rn-tourguide/",
+  "homepage": "https://Toplev-io.github.io/rn-tourguide/",
   "devDependencies": {
     "@types/hoist-non-react-statics": "3.3.1",
     "@types/jest": "25.2.3",
@@ -90,4 +90,4 @@
     "logkitty": "^0.7.1",
     "mem": "^4.0.0"
   }
-}
+}}
