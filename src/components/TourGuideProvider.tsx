@@ -1,5 +1,5 @@
-import mitt from 'mitt'
 import * as React from 'react'
+import {EventEmitter2} from 'eventemitter2'
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 import { TourGuideContext } from '../components/TourGuideContext'
 import { useIsMounted } from '../hooks/useIsMounted'
@@ -56,7 +56,7 @@ export const TourGuideProvider = ({
   const startTries = useRef<number>(0)
   const mounted = useIsMounted()
 
-  const eventEmitter = useMemo(() => new mitt(), [])
+  const eventEmitter = useMemo(() => new EventEmitter2(), [])
 
   const modal = useRef<any>()
 
@@ -99,9 +99,9 @@ export const TourGuideProvider = ({
   }
 
   const setCurrentStep = (step?: IStep) =>
-    new Promise<void>((resolve) => {
+    new Promise<void>(async (resolve) => {
+      await eventEmitter.emitAsync('stepChange', step)
       updateCurrentStep(() => {
-        eventEmitter.emit('stepChange', step)
         resolve()
         return step
       })
