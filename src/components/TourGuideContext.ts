@@ -6,6 +6,7 @@ export interface Emitter {
   on(type: string, handler: Handler): void
   off(type: string, handler: Handler): void
   emit(type: string, event?: any): void
+  emitAsync(type: string, event?: any): Promise<any[]>
 }
 
 export interface ITourGuideContext {
