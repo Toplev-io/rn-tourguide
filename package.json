@@ -1,5 +1,5 @@
 {
-  "name": "@hijack333/rn-tourguide",
+  "name": "@anybyte/rn-tourguide",
   "version": "2.7.5",
   "description": "Make an interactive step by step tour guide for your react-native app (a rewrite of react-native-copilot)",
   "main": "lib/index.js",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Toplev-io/rn-tourguide.git"
+    "url": "git+https://github.com/anybyte/rn-tourguide.git"
   },
   "keywords": [
     "react-native",
@@ -34,12 +34,12 @@
     "intro.js",
     "intro"
   ],
-  "author": "Zhen <g.hijack333@gmail.com>",
+  "author": "Maxim Lyaskovskiy <m.lyaskovskiy@anybyte.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Toplev-io/rn-tourguide/issues"
+    "url": "https://github.com/anybyte/rn-tourguide/issues"
   },
-  "homepage": "https://Toplev-io.github.io/rn-tourguide/",
+  "homepage": "https://anybyte.github.io/rn-tourguide/",
   "devDependencies": {
     "@types/hoist-non-react-statics": "3.3.1",
     "@types/jest": "25.2.3",
