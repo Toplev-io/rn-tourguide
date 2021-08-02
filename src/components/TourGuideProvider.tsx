@@ -100,8 +100,8 @@ export const TourGuideProvider = ({
 
   const setCurrentStep = (step?: IStep) =>
     new Promise<void>(async (resolve) => {
-      await eventEmitter.emitAsync('stepChange', step)
       updateCurrentStep(() => {
+        eventEmitter.emitAsync('stepChange', step)
         resolve()
         return step
       })
